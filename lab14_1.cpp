@@ -29,7 +29,7 @@ void stat(const double A[],int N,double B[]) {
         sum += A[i];
         sum2 += pow(A[i],2);
         sum3 += log(A[i]);
-        sum4 += 1 / A[i];
+        sum4 += 1/A[i];
         if(A[i] > max) {
             max = A[i];
         }
@@ -37,10 +37,10 @@ void stat(const double A[],int N,double B[]) {
             min = A[i];
         }
     }
-    B[0] = sum / N;
-    B[1] = sqrt((sum2 / N) - pow(B[0],2));
-    B[2] = exp(sum3 / N);
-    B[3] = N / sum4;
+    B[0] = sum/N;
+    B[1] = sqrt((sum2/N) - pow(B[0],2));
+    B[2] = exp(sum3/N);
+    B[3] = N/sum4;
     B[4] = max;
     B[5] = min;
 }
