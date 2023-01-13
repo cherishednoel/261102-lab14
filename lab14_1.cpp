@@ -32,7 +32,8 @@ void stat(const double A[],int N,double B[]) {
         sum4 += 1 / A[i];
         if(A[i] > max) {
             max = A[i];
-        } if(A[i] < min) {
+        }
+        if(A[i] < min) {
             min = A[i];
         }
     }
